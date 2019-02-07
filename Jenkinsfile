@@ -1,4 +1,5 @@
 pipeline {
+	options { timestamps () }
     agent { docker { image 'ruby' } }
     stages {
         stage('build') {
